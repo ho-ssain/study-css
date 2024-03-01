@@ -4,127 +4,178 @@
 
 ---
 
-## project-: 1
+## Lesson-1: Start
 
-a mini menu-bar made with the concepts of
+### what is CSS?
 
-1. selectors
-2. Colors
-3. Units and Sizes
-4. Box-model
-5. Typography
-6. Styling links
-7. list styles
+CSS (Cascading Style Sheets) is a language used to control the presentation and styling of webpages written in HTML or XHTML. In simpler terms, CSS is what makes websites look good and visually appealing.
 
-UI-:
-![proj-1](imgs/proj-1.png)
+CSS:
 
-Code-:
+1. **Styling Webpages**:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Menu</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
+   - CSS is used to style the layout, colors, fonts, spacing, and overall appearance of elements on a webpage.
+   - It allows you to change how text, images, links, buttons, and other HTML elements look and behave.
 
-  <body>
-    <nav>
-      <h2>CSS Menu</h2>
-      <ul>
-        <li>
-          <a href="one.html">Home</a>
-        </li>
-        <li>
-          <a href="two.html">Service</a>
-        </li>
-        <li>
-          <a href="two.html">Contact</a>
-        </li>
-        <li>
-          <a href="two.html">About</a>
-        </li>
-        <li>
-          <a href="two.html">Sign-Up</a>
-        </li>
-      </ul>
-    </nav>
+2. **Separation of Concerns**:
 
-    <p>
-      Learn more about
-      <a href="https://coolors.co/gradient-palette/d4781a-aa3678?number=7">
-        Coolors.co
-      </a>
-    </p>
-  </body>
-</html>
-```
+   - CSS allows for the separation of content (HTML) from presentation (CSS) and behavior (JavaScript).
+   - This separation makes it easier to manage and update the styling of a website without having to change the underlying HTML structure.
 
-```css
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+3. **Selectors and Rules**:
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+   - CSS uses selectors to target HTML elements and apply styling rules to them.
+   - For example, you can select all `<p>` elements and change their font size or select elements with a specific class and change their background color.
 
-html {
-  font-size: 10px;
-}
+4. **Syntax**:
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0.8rem;
-  text-align: center;
-}
+   - CSS rules consist of a selector, followed by a declaration block enclosed in curly braces `{}`.
+   - Within the declaration block, you specify one or more property-value pairs separated by semicolons.
+   - For example:
 
-nav {
-  border: 2px solid #333;
-  border-radius: 2rem;
-  margin: 0 auto 1rem;
-  max-width: 60rem;
-  font-size: 1.6rem;
-  line-height: 3rem;
-}
+     ```css
+     p {
+       font-size: 16px;
+       color: #333333;
+     }
+     ```
 
-nav h2 {
-  padding: 1rem;
-  background: papayawhip;
-  border-radius: 2rem 2rem 0 0;
-}
+5. **Cascading and Specificity**:
 
-ul {
-  list-style-type: none;
-}
+   - CSS stands for "Cascading Style Sheets," which means that styles can cascade or flow from one element to another.
+   - Specificity determines which styles take precedence when multiple conflicting styles are applied to the same element.
 
-li {
-  border-top: 1px solid #333;
-}
+6. **Media Queries**:
+   - CSS allows for responsive web design by using media queries to apply different styles based on the characteristics of the device, such as screen size, resolution, or orientation.
+   - This enables websites to adapt and display optimally on various devices, including desktops, tablets, and smartphones.
 
-li a {
-  display: block;
-}
+In summary, CSS is a powerful language that controls the visual presentation of web content. It enables web designers and developers to customize the look and feel of websites, create engaging user experiences, and ensure compatibility across different browsers and devices.
 
-li a,
-li a:visited {
-  text-decoration: none;
-  color: hsla(222, 94%, 50%);
-  opacity: 0.5;
-}
+### different ways of applying CSS to HTML
 
-li a:hover,
-li a:focus {
-  opacity: 1;
-  cursor: pointer;
-  background: rgb(234, 242, 245);
-}
+1. Basic Methods:
+   - Inline Styles
+   - Internal Styles
+   - External Stylesheets
+2. Advanced Methods:
+   - CSS Frameworks
+   - CSS-in-JS
+   - Importing CSS in JavaScript Modules
+   - Inline style Attribute in JSX (for React)
 
-li:last-child a {
-  border-radius: 0 0 2rem 2rem;
-}
-```
+### Writing CSS
+
+1. **Selector**:
+
+   - A selector targets HTML elements that you want to style.
+   - Selectors can be HTML elements, classes, IDs, attributes, or combinations of these.
+   - Example selectors: `h1`, `.button`, `#header`, `[type="text"]`.
+
+2. **Declaration Block**:
+
+   - After the selector, you enclose the CSS declarations within curly braces `{}`.
+   - Each declaration consists of a property and a value, separated by a colon `:`.
+   - Multiple declarations are separated by semicolons `;`.
+   - Example declaration block:
+
+     ```css
+     selector {
+       property1: value1;
+       property2: value2;
+       /* more properties */
+     }
+     ```
+
+## Lesson-2: Selectors
+
+### Types of CSS Selectors
+
+1. **Element Styles**:
+
+   - Applying styles directly to HTML elements using element selectors.
+   - Example:
+
+     ```css
+     h1 {
+       color: blue;
+       font-size: 24px;
+     }
+     ```
+
+2. **Class Styles**:
+
+   - Applying styles to elements with specific class names.
+   - Example:
+
+     ```css
+     .button {
+       background-color: #007bff;
+       color: white;
+       padding: 10px 20px;
+     }
+     ```
+
+3. **ID Styles**:
+
+   - Applying styles to elements with specific IDs.
+   - Note: IDs should be unique within a document.
+   - Example:
+
+     ```css
+     #header {
+       background-color: #333;
+       color: white;
+       padding: 10px;
+     }
+     ```
+
+4. **Attribute Styles**:
+
+   - Applying styles to elements based on their attributes.
+   - Example:
+
+     ```css
+     input[type="text"] {
+       border: 1px solid #ccc;
+       padding: 5px;
+     }
+     ```
+
+5. **Pseudo-class Styles**:
+
+   - Applying styles to elements based on their state or position.
+   - Examples: `:hover`, `:active`, `:focus`, `:nth-child()`, etc.
+   - Example:
+
+     ```css
+     button:hover {
+       background-color: #ffcc00;
+     }
+     ```
+
+6. **Pseudo-element Styles**:
+
+   - Applying styles to parts of an element.
+   - Examples: `::before`, `::after`, `::first-line`, `::first-letter`, etc.
+   - Example:
+
+     ```css
+     p::first-line {
+       font-weight: bold;
+     }
+     ```
+
+7. **Grouping Styles**:
+
+   - Grouping multiple selectors together to apply the same styles.
+   - Example:
+
+     ```css
+     h1,
+     h2,
+     h3 {
+       font-family: Arial, sans-serif;
+     }
+     ```
+
+These are the main types of CSS rules or decorations we'll encounter when styling webpages. By understanding how to write CSS and the different ways to target elements, we can effectively style our HTML documents and create visually appealing websites.
