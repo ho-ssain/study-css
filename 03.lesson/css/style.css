@@ -1,0 +1,13 @@
+body {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  background: papayawhip;
+  /* color: darkblue; */
+  color: rgb(0, 0, 255);
+}
+
+p {
+  /* color: rgba(0, 0, 0, 0.5); */
+  color: #333;
+}

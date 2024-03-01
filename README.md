@@ -179,3 +179,49 @@ In summary, CSS is a powerful language that controls the visual presentation of 
      ```
 
 These are the main types of CSS rules or decorations we'll encounter when styling webpages. By understanding how to write CSS and the different ways to target elements, we can effectively style our HTML documents and create visually appealing websites.
+
+## Lesson-3: CSS Colors
+
+CSS colors are used to specify the color of text, backgrounds, borders, and other elements on a webpage. There are various ways to represent colors in CSS, including named colors, hexadecimal notation, RGB values, RGBA values, HSL values, and HSLA values. Let's discuss each of these:
+
+1. **Named Colors**:
+
+   - CSS provides a set of predefined color names that you can use directly in your stylesheets.
+   - Examples: `red`, `blue`, `green`, `yellow`, `black`, `white`, `orange`, etc.
+   - Example usage: `color: red;`, `background-color: blue;`
+
+2. **Hexadecimal Notation**:
+
+   - Colors can be represented using hexadecimal notation, which consists of a hash `#` followed by three or six hexadecimal digits (0-9, A-F).
+   - The three-digit format represents RGB values in shorthand (e.g., `#f00` for red), and the six-digit format represents the full RGB color space (e.g., `#ff0000` for red).
+   - Example usage: `color: #ff0000;`, `background-color: #00ff00;`
+
+3. **RGB Values**:
+
+   - RGB (Red, Green, Blue) notation represents colors using the intensities of the red, green, and blue components on a scale of 0 to 255.
+   - Syntax: `rgb(redValue, greenValue, blueValue)`
+   - Example usage: `color: rgb(255, 0, 0);`, `background-color: rgb(0, 255, 0);`
+
+4. **RGBA Values**:
+
+   - RGBA is similar to RGB, but with an additional alpha channel that specifies the opacity of the color (transparency), ranging from 0 (fully transparent) to 1 (fully opaque).
+   - Syntax: `rgba(redValue, greenValue, blueValue, alphaValue)`
+   - Example usage: `color: rgba(255, 0, 0, 0.5);`, `background-color: rgba(0, 255, 0, 0.75);`
+
+5. **HSL Values**:
+
+   - HSL (Hue, Saturation, Lightness) notation represents colors using the hue (color tone), saturation (color intensity), and lightness (brightness) components.
+   - Hue is represented as an angle in degrees (0 to 360), while saturation and lightness are percentages (0% to 100%).
+   - Syntax: `hsl(hue, saturation, lightness)`
+   - Example usage: `color: hsl(0, 100%, 50%);`, `background-color: hsl(120, 100%, 50%);`
+
+6. **HSLA Values**:
+   - Similar to HSL, but with an additional alpha channel for specifying opacity.
+   - Syntax: `hsla(hue, saturation, lightness, alpha)`
+   - Example usage: `color: hsla(0, 100%, 50%, 0.5);`, `background-color: hsla(120, 100%, 50%, 0.75);`
+
+By understanding these different color representations in CSS, you have the flexibility to choose the most suitable method based on your design requirements and preferences. Each notation has its advantages and use cases, allowing you to create visually appealing and harmonious color schemes for your webpages.
+
+## Resources adn tools
+
+- [coolors](https://coolors.co/) is a great tool to generate colors based on specific
