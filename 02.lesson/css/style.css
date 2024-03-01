@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+p {
+  color: purple;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
+}
+
+.gray {
+  color: gray;
+}
+
+#second {
+  font-style: italic;
+}
