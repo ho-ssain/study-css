@@ -222,6 +222,50 @@ CSS colors are used to specify the color of text, backgrounds, borders, and othe
 
 By understanding these different color representations in CSS, you have the flexibility to choose the most suitable method based on your design requirements and preferences. Each notation has its advantages and use cases, allowing you to create visually appealing and harmonious color schemes for your webpages.
 
+## Lesson-4: CSS Units
+
+CSS units and sizes are used to define the dimensions, spacing, and positioning of elements on a webpage. They come in various types, each serving different purposes. Here's a brief overview of CSS units and sizes:
+
+1. **Absolute Length Units**:
+
+   - Absolute length units are fixed and do not change based on the viewport or device.
+   - Examples:
+     - `px` (pixels): Represents a single dot on a computer screen. Widely used for precise control over element sizes.
+     - `in` (inches), `cm` (centimeters), `mm` (millimeters): Useful for print stylesheets, where physical measurements are required.
+     - `pt` (points), `pc` (picas): Also used in print stylesheets, with 1 point equaling 1/72 of an inch, and 1 pica equaling 12 points.
+
+2. **Relative Length Units**:
+
+   - Relative length units are relative to another value, such as the font size or the size of the viewport.
+   - Examples:
+     - `em`: Represents the font size of the element itself. For example, `1em` is equal to the font size of the current element.
+     - `rem`: Similar to `em`, but relative to the root element (`<html>`), making it more predictable.
+     - `vw` (viewport width), `vh` (viewport height): Represents a percentage of the viewport width or height, respectively.
+     - `vmin`, `vmax`: Represents the smaller or larger of `vw` and `vh`, respectively.
+
+3. **Percentage Units**:
+
+   - Percentage units are relative to another value, typically the parent element or the viewport.
+   - Examples:
+     - `%`: Represents a percentage of the parent element's size. For example, `50%` is half the size of the parent element.
+     - `%`: Also used in conjunction with `vw` and `vh` to create responsive layouts based on the viewport size.
+
+4. **Flexible Length Units**:
+
+   - Flexible length units are based on a combination of absolute and relative values, allowing for more flexible and responsive layouts.
+   - Examples:
+     - `fr` (flex): Represents a fraction of the available space in a flex container. Used in CSS Flexbox layouts.
+     - `ch`: Represents the width of the character "0" in the current font. Useful for aligning elements based on character width.
+
+5. **Viewport-Percentage Units**:
+   - Viewport-percentage units are relative to the size of the viewport, allowing for responsive designs based on the device's screen size.
+   - Examples:
+     - `vw` (viewport width): Represents a percentage of the viewport's width.
+     - `vh` (viewport height): Represents a percentage of the viewport's height.
+     - `vmin`, `vmax`: Represents the smaller or larger of `vw` and `vh`, respectively.
+
+These CSS units and sizes provide flexibility and control over the layout and appearance of elements on a webpage. By understanding how to use them effectively, you can create responsive and visually appealing designs that adapt to different devices and screen sizes.
+
 ## Resources adn tools
 
 - [coolors](https://coolors.co/) is a great tool to generate colors based on specific
