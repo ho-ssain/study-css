@@ -506,7 +506,46 @@ By utilizing these CSS properties and techniques, you can customize the appearan
 
 ## Lesson-10: Display
 
+In CSS, the `display` property is used to control how an element is rendered in the document layout. It specifies the type of box model used for an element, which determines how it interacts with other elements in the document flow. The `display` property accepts various values, each with its own behavior. Here's an overview of some commonly used values for the `display` property:
+
+1. **`block`**:
+
+   - The element generates a block-level box, which typically starts on a new line and stretches to fill the width of its containing element.
+   - Examples of block-level elements include `<div>`, `<p>`, `<h1>`-`<h6>`, `<ul>`, `<ol>`, `<li>`, and `<section>`.
+
+2. **`inline`**:
+
+   - The element generates an inline-level box, which does not start on a new line and only takes up as much width as necessary.
+   - Examples of inline-level elements include `<span>`, `<a>`, `<strong>`, `<em>`, and `<img>`.
+
+3. **`inline-block`**:
+
+   - The element generates an inline-level box that behaves like a block-level box. It does not start on a new line but can have width, height, padding, and margins.
+   - Useful for elements that need to be displayed inline but also require block-level styling, such as buttons or form elements.
+
+4. **`none`**:
+
+   - The element is removed from the document layout entirely. It does not occupy any space on the page, and its contents are not rendered.
+   - Useful for hiding elements dynamically using JavaScript or CSS.
+
+5. **`flex`**:
+
+   - The element becomes a flex container, and its direct children become flex items. This allows for flexible layouts using the flexbox model.
+   - Flex containers can be manipulated using properties like `justify-content`, `align-items`, and `flex-direction`.
+
+6. **`grid`**:
+
+   - The element becomes a grid container, and its direct children become grid items. This allows for complex layouts using the CSS Grid Layout module.
+   - Grid containers can be manipulated using properties like `grid-template-columns`, `grid-template-rows`, and `grid-gap`.
+
+7. **`table`, `table-cell`, `table-row`, `table-row-group`, etc.**:
+   - These values generate elements that behave like HTML table elements. They are useful for creating table-like layouts without using actual `<table>` elements.
+
+Understanding and appropriately using the `display` property is essential for controlling the layout and structure of webpages. By selecting the appropriate `display` value, you can achieve the desired visual presentation and ensure proper interaction between elements within your document layout.
+
 ---
+
+## Lesson-11: Floats
 
 ## Resources adn tools
 
