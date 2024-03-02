@@ -420,7 +420,85 @@ By applying these styling techniques, you can create visually appealing and user
 
 ## Lesson-8: List Styles
 
----
+In CSS, list styles refer to the appearance of lists, including unordered lists (`<ul>`) and ordered lists (`<ol>`). You can control various aspects of list styling, such as the type of bullet or numbering, position, spacing, and appearance of list items. Here's a comprehensive overview of list styles in CSS:
+
+1. **List Style Type**:
+
+   - Determines the type of marker used for list items.
+   - Common values for unordered lists (`<ul>`) include `disc`, `circle`, and `square`.
+   - Common values for ordered lists (`<ol>`) include `decimal`, `lower-alpha`, and `upper-roman`.
+   - Example:
+
+     ```css
+     ul {
+       list-style-type: circle; /* Bullets as circles */
+     }
+     ol {
+       list-style-type: decimal; /* Numbering as decimal */
+     }
+     ```
+
+2. **List Style Position**:
+
+   - Specifies the position of the marker relative to the list item text.
+   - Values include `inside` (marker inside the list item box) and `outside` (marker outside the list item box).
+   - Example:
+
+     ```css
+     ul {
+       list-style-position: inside; /* Bullets inside the list item box */
+     }
+     ```
+
+3. **List Style Image**:
+
+   - Allows you to use custom images as list item markers.
+   - Use the `url()` function to specify the path to the image.
+   - Example:
+
+     ```css
+     ul {
+       list-style-image: url("path/to/image.png"); /* Custom image as list item marker */
+     }
+     ```
+
+4. **List Style Shorthand**:
+
+   - The `list-style` shorthand property can be used to set all list style properties (type, position, image) in one declaration.
+   - Example:
+
+     ```css
+     ul {
+       list-style: square inside url("path/to/image.png"); /* Bullet as square, inside list item, with custom image */
+     }
+     ```
+
+5. **List Item Styles**:
+
+   - You can apply styles directly to list items (`<li>`), such as padding, margin, color, and background.
+   - Example:
+
+     ```css
+     li {
+       padding: 5px;
+       margin-bottom: 10px;
+       color: #333;
+       background-color: #f5f5f5;
+     }
+     ```
+
+6. **Nested Lists**:
+
+   - Styles applied to parent lists can also affect nested lists. Use descendant selectors to target nested lists specifically.
+   - Example:
+
+     ```css
+     ul ul {
+       list-style-type: square; /* Nested lists have square bullets */
+     }
+     ```
+
+By utilizing these CSS properties and techniques, you can customize the appearance of lists on your webpages to match the design and layout requirements of your site. Whether you're creating simple bulleted lists or complex numbered outlines, CSS provides the flexibility to tailor list styles to your needs.
 
 ## Lesson-9: Mini Project
 
