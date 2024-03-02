@@ -86,6 +86,8 @@ In summary, CSS is a powerful language that controls the visual presentation of 
      }
      ```
 
+---
+
 ## Lesson-2: Selectors
 
 ### Types of CSS Selectors
@@ -180,6 +182,8 @@ In summary, CSS is a powerful language that controls the visual presentation of 
 
 These are the main types of CSS rules or decorations we'll encounter when styling webpages. By understanding how to write CSS and the different ways to target elements, we can effectively style our HTML documents and create visually appealing websites.
 
+---
+
 ## Lesson-3: CSS Colors
 
 CSS colors are used to specify the color of text, backgrounds, borders, and other elements on a webpage. There are various ways to represent colors in CSS, including named colors, hexadecimal notation, RGB values, RGBA values, HSL values, and HSLA values. Let's discuss each of these:
@@ -221,6 +225,8 @@ CSS colors are used to specify the color of text, backgrounds, borders, and othe
    - Example usage: `color: hsla(0, 100%, 50%, 0.5);`, `background-color: hsla(120, 100%, 50%, 0.75);`
 
 By understanding these different color representations in CSS, you have the flexibility to choose the most suitable method based on your design requirements and preferences. Each notation has its advantages and use cases, allowing you to create visually appealing and harmonious color schemes for your webpages.
+
+---
 
 ## Lesson-4: CSS Units
 
@@ -265,6 +271,43 @@ CSS units and sizes are used to define the dimensions, spacing, and positioning 
      - `vmin`, `vmax`: Represents the smaller or larger of `vw` and `vh`, respectively.
 
 These CSS units and sizes provide flexibility and control over the layout and appearance of elements on a webpage. By understanding how to use them effectively, you can create responsive and visually appealing designs that adapt to different devices and screen sizes.
+
+---
+
+## Lesson-5: CSS Box Model
+
+The CSS Box Model is a fundamental concept in CSS that describes the layout and rendering of elements on a webpage. It conceptualizes each HTML element as a rectangular box, comprising content, padding, borders, and margins. Here's a brief overview of the CSS Box Model:
+
+1. **Content**:
+
+   - The content area of an element represents the actual content, such as text, images, or other media, contained within the element.
+   - The size of the content area is determined by the `width` and `height` properties specified in CSS.
+
+2. **Padding**:
+
+   - Padding is the space between the content area and the element's border.
+   - It provides internal spacing within the element, separating the content from its borders.
+   - Padding can be adjusted using the `padding` property in CSS, which accepts values in pixels, percentages, or other length units.
+
+3. **Border**:
+
+   - The border surrounds the padding area and visually separates the element's content from its surroundings.
+   - Borders can have different styles (solid, dashed, dotted, etc.), widths, and colors.
+   - Border properties include `border-width`, `border-style`, and `border-color`, among others.
+
+4. **Margin**:
+   - Margin is the space outside the element's border, separating it from other elements in the layout.
+   - It creates space between adjacent elements, preventing them from visually merging.
+   - Margins can be adjusted using the `margin` property in CSS, which accepts values in pixels, percentages, or other length units.
+
+The total space occupied by an element, including its content, padding, border, and margin, is referred to as the "box" of the element. The size of the box is calculated as follows:
+
+```css
+Total width = width + padding-left + padding-right + border-left-width + border-right-width + margin-left + margin-right
+Total height = height + padding-top + padding-bottom + border-top-width + border-bottom-width + margin-top + margin-bottom
+```
+
+Understanding the CSS Box Model is essential for accurately controlling the layout, spacing, and appearance of elements on a webpage. By adjusting the content, padding, borders, and margins of elements, designers and developers can create visually appealing and well-structured layouts that adapt to various screen sizes and devices.
 
 ## Resources adn tools
 
