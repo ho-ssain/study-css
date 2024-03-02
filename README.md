@@ -603,6 +603,96 @@ Overall, while floats have been largely superseded by more modern layout techniq
 
 ---
 
-## Resources adn tools
+## Lesson-12 Columns
+
+In CSS, creating columns refers to the process of dividing content into multiple vertical sections within a container element. This can be achieved using various CSS techniques, including the CSS Grid Layout, the CSS Multi-column Layout Module, and the `column` property. Here, we'll focus on discussing the CSS Multi-column Layout Module:
+
+### CSS Multi-column Layout Module
+
+1. **Creating Columns**:
+
+   - The `column-count` property specifies the number of columns that content should be divided into. You can set it to any positive integer value to define the number of columns.
+   - Example:
+
+     ```css
+     .container {
+       column-count: 3; /* Divide content into three columns */
+     }
+     ```
+
+2. **Column Gap**:
+
+   - The `column-gap` property specifies the gap between columns.
+   - Example:
+
+     ```css
+     .container {
+       column-count: 3;
+       column-gap: 20px; /* Set a gap of 20 pixels between columns */
+     }
+     ```
+
+3. **Column Rule**:
+
+   - The `column-rule` property allows you to set a vertical line between columns, known as a "rule."
+   - Example:
+
+     ```css
+     .container {
+       column-count: 3;
+       column-gap: 20px;
+       column-rule: 1px solid #ccc; /* Add a solid line between columns */
+     }
+     ```
+
+4. **Column Width**:
+
+   - The `column-width` property specifies the width of each column. If both `column-count` and `column-width` are specified, the browser will choose the number of columns based on the available space.
+   - Example:
+
+     ```css
+     .container {
+       column-width: 200px; /* Set the width of each column to 200 pixels */
+     }
+     ```
+
+5. **Spanning Content Across Columns**:
+
+   - You can use the `column-span` property to make certain elements span across multiple columns.
+   - Example:
+
+     ```css
+     .spanned-element {
+       column-span: all; /* Make the element span across all columns */
+     }
+     ```
+
+6. **Column Fill**:
+
+   - The `column-fill` property specifies how content should be distributed across columns. It can be set to `auto` (default) or `balance`.
+   - Example:
+
+     ```css
+     .container {
+       column-count: 3;
+       column-fill: balance; /* Distribute content evenly across columns */
+     }
+     ```
+
+7. **Column Breaks**:
+
+   - You can control where column breaks occur using the `break-before`, `break-after`, `break-inside` properties.
+   - Example:
+
+     ```css
+     .break-after-example {
+       break-after: column; /* Force a column break after the element */
+     }
+     ```
+
+The CSS Multi-column Layout Module provides a powerful way to create column-based layouts in CSS, allowing for flexible and responsive designs. It's particularly useful for dividing text content into newspaper-style columns or creating multi-column layouts for magazine-style designs. However, browser support may vary, so it's essential to consider compatibility when using these properties.
+
+## Resources and tools
 
 - [coolors](https://coolors.co/) is a great tool to generate colors based on specific
+- [unicode-table](https://unicode-table.com) allows you to search for unicode characters in real time
