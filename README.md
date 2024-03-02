@@ -346,6 +346,90 @@ Typography in web design refers to the art and technique of arranging type to ma
 
 In summary, typography in web design encompasses font selection, size, hierarchy, spacing, and styling to create visually appealing and readable content. By employing principles of good typography, web designers can enhance the user experience, communicate effectively, and convey the intended message of the website.
 
+---
+
+## Lesson-7: Styling Links
+
+Styling links in CSS is crucial for enhancing their visibility, usability, and aesthetic appeal. Links are a fundamental aspect of web navigation, and their appearance can greatly influence user experience. Here are some common techniques for styling links in CSS:
+
+1. **Text Color**:
+
+   - Set the color of the link text to distinguish it from surrounding content.
+   - Use contrasting colors to ensure readability, especially against the background color.
+   - Example: `a { color: blue; }`
+
+2. **Text Decoration**:
+
+   - Apply decorative effects to the link text, such as underlining or removing the default underline.
+   - Common values for the `text-decoration` property include `underline`, `none`, `overline`, and `line-through`.
+   - Example: `a { text-decoration: none; }`
+
+3. **Hover Effects**:
+
+   - Add visual feedback to links when users hover over them with the mouse pointer.
+   - Change the color, underline, or background of the link to indicate interactivity.
+   - Example: `a:hover { color: red; }`
+
+4. **Visited Links**:
+
+   - Style links that have been visited by users differently from unvisited links to provide visual feedback.
+   - Use a distinct color or text decoration for visited links to help users keep track of their browsing history.
+   - Example: `a:visited { color: purple; }`
+
+5. **Active Links**:
+
+   - Style links when they are being activated, such as when clicked.
+   - Apply different colors or effects to indicate the active state of the link.
+   - Example: `a:active { color: green; }`
+
+6. **Focus Styles**:
+
+   - Ensure links are easily identifiable and accessible when they receive keyboard focus.
+   - Use a different color, border, or outline to highlight focused links.
+   - Example: `a:focus { outline: 2px solid blue; }`
+
+7. **Link States**:
+
+   - Style links based on their states, such as `:hover`, `:visited`, `:active`, and `:focus`.
+   - Use different styles for each state to provide clear visual feedback to users.
+   - Example:
+
+     ```css
+     a:hover {
+       color: red;
+     }
+     a:visited {
+       color: purple;
+     }
+     a:active {
+       color: green;
+     }
+     a:focus {
+       outline: 2px solid blue;
+     }
+     ```
+
+8. **Link Underlines**:
+   - Control the appearance of link underlines, including their thickness, style, and color.
+   - Customize underlines to match the overall design aesthetic of the website.
+   - Example: `a { text-decoration: underline dotted blue; }`
+
+By applying these styling techniques, you can create visually appealing and user-friendly links that enhance navigation and improve the overall experience of your website visitors.
+
+---
+
+## Lesson-8: List Styles
+
+---
+
+## Lesson-9: Mini Project
+
+---
+
+## Lesson-10: Display
+
+---
+
 ## Resources adn tools
 
 - [coolors](https://coolors.co/) is a great tool to generate colors based on specific
