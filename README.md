@@ -692,6 +692,42 @@ In CSS, creating columns refers to the process of dividing content into multiple
 
 The CSS Multi-column Layout Module provides a powerful way to create column-based layouts in CSS, allowing for flexible and responsive designs. It's particularly useful for dividing text content into newspaper-style columns or creating multi-column layouts for magazine-style designs. However, browser support may vary, so it's essential to consider compatibility when using these properties.
 
+---
+
+## Lesson-13 Positions
+
+In CSS, the `position` property is used to specify the positioning method of an element within its containing element. The `position` property can take several values, each of which determines how an element is positioned on the page. Here's a discussion of the different values for the `position` property:
+
+1. **`static`**:
+
+   - This is the default value of the `position` property.
+   - Elements with `position: static;` are positioned according to the normal flow of the document.
+   - They are not affected by the `top`, `bottom`, `left`, and `right` properties.
+
+2. **`relative`**:
+
+   - Elements with `position: relative;` are positioned relative to their normal position in the document flow.
+   - When using `position: relative;`, you can adjust the element's position using the `top`, `bottom`, `left`, and `right` properties.
+   - Other elements on the page will still be positioned as if the relative-positioned element were in its original position in the document flow.
+
+3. **`absolute`**:
+
+   - Elements with `position: absolute;` are removed from the normal document flow and positioned relative to the nearest positioned ancestor (an ancestor element with `position` set to anything other than `static`) or to the initial containing block if no positioned ancestor is found.
+   - Absolute positioning allows you to precisely position elements anywhere on the page, regardless of their surrounding elements.
+   - The `top`, `bottom`, `left`, and `right` properties can be used to specify the exact position of the element relative to its containing block.
+
+4. **`fixed`**:
+
+   - Elements with `position: fixed;` are removed from the normal document flow and positioned relative to the browser window's viewport.
+   - Fixed-positioned elements remain in the same position even when the page is scrolled.
+   - Like absolute positioning, you can use the `top`, `bottom`, `left`, and `right` properties to specify the exact position of the element relative to the viewport.
+
+5. **`sticky`**:
+   - Elements with `position: sticky;` are positioned based on the user's scroll position. They behave like `relative` positioning until they reach a specified point (defined by `top`, `bottom`, `left`, or `right` properties), at which point they become fixed.
+   - Sticky positioning is commonly used for elements such as navigation bars or table headers that should remain visible as the user scrolls through content.
+
+Understanding and properly using the `position` property is crucial for creating complex layouts and achieving specific design goals in CSS. By leveraging different values for the `position` property, you can control the positioning of elements with precision and create visually appealing and interactive web experiences.
+
 ## Resources and tools
 
 - [coolors](https://coolors.co/) is a great tool to generate colors based on specific
