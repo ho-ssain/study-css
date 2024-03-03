@@ -728,7 +728,92 @@ In CSS, the `position` property is used to specify the positioning method of an 
 
 Understanding and properly using the `position` property is crucial for creating complex layouts and achieving specific design goals in CSS. By leveraging different values for the `position` property, you can control the positioning of elements with precision and create visually appealing and interactive web experiences.
 
+---
+
+## Lesson-14 Flexbox
+
+Flexbox, also known as the Flexible Box Layout, is a powerful layout model in CSS that allows you to design flexible and responsive layouts with ease. Flexbox provides a more efficient way to distribute space and align items within a container, making it ideal for creating complex and dynamic layouts. Here's a detailed discussion of Flexbox along with examples:
+
+### Basics of Flexbox
+
+1. **Flex Container and Flex Items**:
+
+   - To use Flexbox, you first need to designate a container as a flex container by applying `display: flex;` or `display: inline-flex;` to it.
+   - The child elements of a flex container are called flex items. By default, flex items are laid out in a single row (in the main axis) and can wrap onto multiple lines if needed.
+
+2. **Main Axis and Cross Axis**:
+
+   - Flexbox layout is based on two axes: the main axis and the cross axis.
+   - The main axis is the primary axis along which flex items are laid out (horizontally by default for `flex-direction: row`, vertically for `flex-direction: column`).
+   - The cross axis is perpendicular to the main axis.
+
+3. **Flex Container Properties**:
+
+   - `display`: Specifies the type of flex container (`flex` or `inline-flex`).
+   - `flex-direction`: Specifies the direction of the main axis (`row`, `row-reverse`, `column`, or `column-reverse`).
+   - `flex-wrap`: Specifies whether flex items should wrap onto multiple lines if needed (`nowrap`, `wrap`, or `wrap-reverse`).
+   - `justify-content`: Aligns flex items along the main axis (`flex-start`, `flex-end`, `center`, `space-between`, `space-around`, or `space-evenly`).
+   - `align-items`: Aligns flex items along the cross axis (`flex-start`, `flex-end`, `center`, `baseline`, or `stretch`).
+   - `align-content`: Aligns wrapped lines of flex items along the cross axis (`flex-start`, `flex-end`, `center`, `space-between`, `space-around`, or `stretch`).
+
+4. **Flex Item Properties**:
+   - `flex`: Specifies the flex grow factor, flex shrink factor, and flex basis of a flex item (`flex-grow`, `flex-shrink`, and `flex-basis` shorthand).
+   - `order`: Specifies the order in which flex items are displayed relative to each other.
+   - `align-self`: Overrides the `align-items` value for a specific flex item.
+
+### Example
+
+Let's create a simple example demonstrating the use of Flexbox for a navigation bar:
+
+HTML:
+
+```html
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+```
+
+CSS:
+
+```css
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+```
+
+In this example:
+
+- The `.navbar` class is set as a flex container, with `display: flex;`.
+- Flex items (links) are evenly distributed along the main axis using `justify-content: space-around;`.
+- Flex items are centered along the cross axis using `align-items: center;`.
+- The navigation bar has a background color of `#333` and white text color.
+- Links have padding and inherit the color from their parent.
+- On hover, links change background color to `#555`.
+
+Flexbox provides a flexible and intuitive way to create layout structures, making it a valuable tool for building responsive and dynamic web designs. By mastering Flexbox, you can create complex layouts with minimal code and achieve greater control over the positioning and alignment of elements on your webpage.
+
+---
+
 ## Resources and tools
 
 - [coolors](https://coolors.co/) is a great tool to generate colors based on specific
 - [unicode-table](https://unicode-table.com) allows you to search for unicode characters in real time
+- [flexbox-froggy](https:flexboxfroggy.com) for practicing flex-box
